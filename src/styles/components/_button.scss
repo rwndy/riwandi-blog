@@ -1,0 +1,20 @@
+.button {
+
+  &__container {
+
+    margin-top: 1.6rem;
+    animation: moveInLeft 2.5s;
+
+    > button {
+      background-color: transparent;
+      color: $color-white;
+      border: 1px solid $color-white;
+      padding: 1.5rem 2.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+      line-height: 1.4rem;
+      outline: none;
+    }
+  }
+}

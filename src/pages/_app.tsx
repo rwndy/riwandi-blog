@@ -1,8 +1,14 @@
 import '../styles/main.scss';
 import type { AppProps } from 'next/app';
+import { AppProvider } from '../context/AppContext';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <AppProvider>
+      <Component {...pageProps} />
+      <div id="modal" />
+    </AppProvider>
+  );
 }
 
 export default MyApp;

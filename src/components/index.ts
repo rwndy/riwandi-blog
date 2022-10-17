@@ -1,3 +1,4 @@
 import Meta from './Meta';
+import HomeComponent from './Home';
 
-export { Meta };
+export { HomeComponent, Meta };

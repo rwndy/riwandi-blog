@@ -1,5 +1,10 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "base/animation";
 @import "base/base";
+
+@import "components/button";
 @import "components/home";
+
+@import "layout/layout";

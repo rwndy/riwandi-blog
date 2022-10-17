@@ -9,7 +9,8 @@
   }
 
   &__title {
-    font-size: 6rem;
+    font-size: clamp(4rem, 4vw, 7.2rem);
+    animation: moveInLeft 3s;
   }
   
 }
