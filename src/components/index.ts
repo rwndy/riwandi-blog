@@ -1,4 +1,6 @@
 import Meta from './Meta';
 import HomeComponent from './Home';
+import Modals from './Global/Modals';
+import AboutMobile from './AboutMobile';
 
-export { HomeComponent, Meta };
+export { AboutMobile, HomeComponent, Meta, Modals };
