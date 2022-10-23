@@ -2,10 +2,16 @@ import { useAppContext } from 'context/AppContext';
 import { Modals } from 'components';
 import Image from 'next/image';
 
+type Icons = {
+  id: number;
+  source_url: string;
+  name_icons: string;
+};
+
 const AboutMobile = () => {
   const { closeModal, isModalMobileOpen } = useAppContext();
 
-  const icons = [
+  const icons: Icons[] = [
     {
       id: 1,
       source_url:
