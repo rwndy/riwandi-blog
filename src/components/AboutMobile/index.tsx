@@ -1,12 +1,20 @@
 import { useAppContext } from 'context/AppContext';
 import { Modals } from 'components';
 import Image from 'next/image';
+import Link from 'next/link'
 
 type Icons = {
   id: number;
   source_url: string;
   name_icons: string;
 };
+
+type Portfolios = {
+  id: number;
+  source_url_img: string
+  name_project: string
+  source_url: string
+}
 
 const AboutMobile = () => {
   const { closeModal, isModalMobileOpen } = useAppContext();
@@ -79,6 +87,40 @@ const AboutMobile = () => {
       name_icons: 'typescript',
     },
   ];
+
+
+  const myPortfolios: Portfolios[] = [
+    {
+      id: 1,
+      source_url_img: '/assets/aroma-medan.png',
+      name_project: 'Aromamedan',
+      source_url: 'https://aromamedan.com'
+    },
+    {
+      id: 2,
+      source_url_img: '/assets/coco-story.png',
+      name_project: 'Coco Story',
+      source_url: 'https://cocostory.co.id/'
+    },
+    {
+      id: 3,
+      source_url_img: '/assets/pondok-selera.png',
+      name_project: 'Pondok Selera Sunda',
+      source_url: 'https://pondokselerasunda.com/'
+    },
+    {
+      id: 4,
+      source_url_img: '/assets/deliveries.png',
+      name_project: 'Deliveries',
+      source_url: 'https://deliveries-app.scapespec.co.nz'
+    },
+    {
+      id: 5,
+      source_url_img: '/assets/m-page.png',
+      name_project: 'Mypage',
+      source_url: 'https://app.getmypage.com/riwandi'
+    },
+  ]
   return (
     <>
       <Modals id="modal" className="modal" section="div">
@@ -98,18 +140,19 @@ const AboutMobile = () => {
                   alt="Picture of the author"
                   className="modal__avatar"
                   objectFit="cover"
+                  priority
                 />
               </div>
               <div className="modal__about__proffesion">
                 <h3 className="modal__about__name">Riwandi</h3>
-                <h4 className="modal__about__job">Software Developer</h4>
+                <h4 className="modal__about__job">Software Engineer</h4>
               </div>
               <div className="modal__about__profile">
                 <div className="modal__about__profile--wrapper">
                   <h2 className="modal__about__title">About Me</h2>
                 </div>
                 <section className="modal__about--section">
-                  <p>{`Hello, my name is Riwandi. but, you can call me wandi. i'm a software developer focuses on frontend with Next JS and React Native. i've been worked a lot projects, like e-commerce web, landing page, and mobile apps. and also have experienced more than 1 years`}</p>
+                  <p>{`Hello, my name is Riwandi. but, you can call me wandi. i'm a software Engineer focuses on frontend with Next JS and React Native. i've been worked a lot projects, like e-commerce web, landing page, and mobile apps. and also have experienced more than 1 years`}</p>
                 </section>
 
                 <section className="modal__about__tech">
@@ -122,6 +165,7 @@ const AboutMobile = () => {
                           alt={icon.name_icons}
                           width={40}
                           height={40}
+                          priority
                         />
                         <p>{icon.name_icons}</p>
                       </div>
@@ -137,7 +181,28 @@ const AboutMobile = () => {
                     <li>English</li>
                   </ul>
                 </section>
+
+                
+              <section className='modal__about__portfolios'>
+                  <h2 className="modal__about__title">Portfolios</h2>
+                  <ul className='modal__about--porto-list' >
+                {
+                  myPortfolios.map( portfolio => (                  
+                  
+                    <li key={portfolio.id}>
+                      <Link href={portfolio.source_url} >
+                          <a target={'_blank'}>{portfolio.name_project}</a>
+                      </Link>
+                    </li>
+               
+                
+                  ))
+                }
+                   </ul>
+                
+              </section>
               </div>
+
             </div>
           </div>
         </div>

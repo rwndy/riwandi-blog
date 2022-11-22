@@ -68,7 +68,6 @@
     &__profile {
       background-color: $color-secondary;
       padding: 1.6rem;
-      height: 100%;
     }
 
     &--section {
@@ -119,6 +118,27 @@
          }
       }
 
+    }
+
+
+    &__portfolios {
+      margin-top: 2rem;
+    }
+
+    &--porto-list {
+      display: flex;
+        margin-top: 2rem;
+       flex-wrap: wrap;
+       gap: 1rem;
+
+         > li {
+          background-color: #8e8ef9;
+          font-size: 1.5rem;
+          padding: 1rem 1.5rem;
+          margin-right: 1rem;
+          border-radius: 2rem;
+          font-weight: 600;
+         }
     }
 
   }

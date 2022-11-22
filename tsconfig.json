@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": "src",
-    "paths": { "@components": ["src/components/index.ts"], },
+    "paths": { "@/components/*": ["src/components/index.ts"], },
    
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src"],
