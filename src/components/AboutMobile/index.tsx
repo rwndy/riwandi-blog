@@ -135,7 +135,7 @@ const AboutMobile = () => {
             <div className="modal__about__body">
               <div className="modal__about--avatar">
                 <Image
-                  src={'/assets/riwandi.jpg'}
+                  src={'/assets/riwandi.webp'}
                   layout="fill"
                   alt="Picture of the author"
                   className="modal__avatar"
