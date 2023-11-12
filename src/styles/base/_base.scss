@@ -3,21 +3,28 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
 }
 
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-html, body, #__next {
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  background-color: $color-primary;
+html,
+body,
+#__next {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgba(12, 61, 98, 1) 0%,
+    rgba(16, 116, 189, 1) 51%,
+    rgba(92, 224, 228, 1) 98%
+  );
+
   color: $color-white;
 }
 

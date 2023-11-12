@@ -1,14 +1,13 @@
-import { AboutMobile, HomeComponent, Meta } from 'components';
-import { useAppContext } from 'context/AppContext';
+import { HomeComponent, Meta } from '@/components';
+
 
 const Home = () => {
-  const { isModalMobileOpen, isModalOpen } = useAppContext();
 
   return (
     <>
       <Meta />
       <HomeComponent />
-      {isModalMobileOpen && <AboutMobile />}
+      
     </>
   );
 };

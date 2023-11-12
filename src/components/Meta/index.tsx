@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const Meta = () => {
   return (
@@ -8,21 +8,19 @@ const Meta = () => {
 
       <meta
         name="description"
-        content="Riwandi adalah seorang Penulis dan juga Front-end Developer di Indonesia "
+        content="Passionate front-end engineer with 4 years of experience. Expertise in React.js, Next.js, TypeScript, Sass, Tailwind, Emotion-CSS, Redux, GraphQL, and React Native."
       />
-      <meta name="keywords" content="Penulis, Front-end Developer, Riwandi" />
-      <meta name="robots" content="index, follow" />
-      <meta name="googlebot" content="index, follow" />
+      <meta name="keywords" content="Penulis, Front-end Engineer, Riwandi" />
+      <meta name="robots" content="index, follow, max-image-preview:large" />
       <meta name="distribution" content="global" />
       <meta
         name="classification"
-        content="Penulis konten, Front-end Developer"
+        content="Penulis, Front-end Engineer"
       />
-      <meta name="mytopic" content="keseharian, keluh-kesah, anak muda" />
       <meta property="og:title" content="Riwandi" />
       <meta
         property="og:description"
-        content="Riwandi adalah seorang Penulis dan juga Front-end Developer di Indonesia"
+        content="Passionate front-end engineer with 4 years of experience. Expertise in React.js, Next.js, TypeScript, Sass, Tailwind, Emotion-CSS, Redux, GraphQL, and React Native."
       />
       <meta property="og:image" content="/favicon.ico" />
     </Head>

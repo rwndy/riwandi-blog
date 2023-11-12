@@ -2,6 +2,7 @@
   padding: 0 4.5%;
   margin: auto;
   max-width: 160rem;
+  position: relative;
 
   @include for-desktop() {
     padding: 0 9.37%;

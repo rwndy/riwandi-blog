@@ -1,0 +1,57 @@
+.about {
+  padding-top: 5rem;
+
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 2rem;
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.5rem;
+
+    &--journey {
+      padding-top: 5rem;
+      border-bottom: 1px solid #fff;
+      padding-bottom: .5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__avatar {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    :hover {
+      transform: translate(15px, 15px) rotate(15deg);
+    }
+  }
+
+  &__journey {
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    width: 80%;
+
+    &--journey {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      padding-bottom: 2rem;
+    }
+  }
+}

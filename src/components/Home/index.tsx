@@ -1,18 +1,21 @@
-import { useAppContext } from 'context/AppContext';
-import Layout from 'components/Layout';
+import { Layout, Navigation } from "@/components";
 
 const HomeComponent = () => {
-  const { openModal } = useAppContext();
-
   return (
-    <Layout>
-      <div className="home__container">
-        <h1 className="home__title">Hi! Nice to Meet You!</h1>
-        <div className="button__container">
-          <button onClick={openModal}>know more about me</button>
+    <>
+      <Navigation />
+      <Layout>
+        <div className="home__container">
+          <h1 className="home__title">Hi, I am Riwandi</h1>
+          <p className="home__description">
+            I am a Software Engineer focusing on front-end development.
+            Currently, I am working at RCTI+. I have 4 years of experience
+            working with different industries, including e-commerce, logistics,
+            and media.
+          </p>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 
