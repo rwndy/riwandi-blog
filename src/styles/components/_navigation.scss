@@ -7,10 +7,26 @@
     justify-content: flex-end;
   }
 
+  &__button {
+    display: none;
+  }
+
   &__item {
     padding: 1.6rem 2rem;
     font-size: 1.8rem;
     line-height: 2.4rem;
     font-weight: 600;
   }
+
+  @include for-very-small() {
+    &__list {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+    }
+
+  }
+
 }

@@ -42,8 +42,6 @@ const Modals: FC<Props> = props => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wrapper, id, className]);
 
-  console.log('element', el);
-
   if (!wrapper.current) {
     return <>{null}</>;
   }
