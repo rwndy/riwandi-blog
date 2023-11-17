@@ -43,7 +43,7 @@ const ModalNav = () => {
         <div className="modal__content">
           <ul className="modal__nav--list">
             {listNavs.map((list) => (
-              <li key={list.id} className="modal__nav--item">
+              <li key={list.id} className="modal__nav--item" onClick={() => closeModal()}>
                 <Link href={list.route} className="modal__nav--link">
                   {list.title}
                 </Link>
