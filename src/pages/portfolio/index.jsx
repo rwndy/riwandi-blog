@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import { Layout, Navigation, Meta } from "@/components"
+import { Layout, Navigation, Meta, ModalNav } from "@/components"
+import { useAppContext } from "@/context/AppContext"
 
 const Portfolio = () => {
+
+  const { isModalOpen } = useAppContext();
+
   return (
     <>
       <Meta title="Riwandi | Portfolio" />
       <Layout>
+      { isModalOpen &&  <ModalNav /> }
         <Navigation />
         <div className="portfolio">
           <div className="portfolio__contents">
