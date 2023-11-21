@@ -1,9 +1,13 @@
 import Head from "next/head";
 
-const Meta = () => {
+interface PropsMeta {
+  title: string
+}
+
+const Meta = ({ title }: PropsMeta) => {
   return (
     <Head>
-      <title>Riwandi</title>
+      <title>{title}</title>
       <link rel="icon" href="/favicon.ico" />
 
       <meta
@@ -17,7 +21,7 @@ const Meta = () => {
         name="classification"
         content="Penulis, Front-end Engineer"
       />
-      <meta property="og:title" content="Riwandi" />
+      <meta property="og:title" content={title} />
       <meta
         property="og:description"
         content="Passionate front-end engineer with 4 years of experience. Expertise in React.js, Next.js, TypeScript, Sass, Tailwind, Emotion-CSS, Redux, GraphQL, and React Native."

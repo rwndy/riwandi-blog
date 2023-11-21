@@ -1,4 +1,4 @@
-import { Layout, Navigation, ModalNav } from "@/components";
+import { Layout, Navigation, ModalNav, Meta } from "@/components";
 import { useAppContext } from "@/context/AppContext";
 import Image from "next/image";
 
@@ -8,6 +8,7 @@ const About = () => {
 
   return (
     <Layout>
+      <Meta title="Riwandi | About"/>
        { isModalOpen &&  <ModalNav /> }
       <Navigation />
       <div className="about">

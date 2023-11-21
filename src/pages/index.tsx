@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <>
-      <Meta />
+      <Meta title='Riwandi | Home'/>
       <HomeComponent />
       
     </>
